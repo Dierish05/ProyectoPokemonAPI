@@ -1,0 +1,88 @@
+/* botones filter */
+
+.btn-flying{
+    background: linear-gradient(to bottom, #3DC7EF 50%, #BDB9B8 50%); 
+}
+
+.btn-dragon{
+    background: linear-gradient(to bottom, #53A4CF 50%, #F16E57 50%); 
+    color: #fff;
+}
+
+.btn-ground{
+    background: linear-gradient(to bottom, #F7DE3F 50%, #AB9842 50%); 
+}
+
+.btn-normal{
+    background: #A4ACAF;
+}
+
+.btn-bug{
+    background: #729F3F;
+    color: #fff;
+}
+
+.btn-fairy{
+    background: #FDB9E9;
+}
+
+.btn-fire{
+    background: #FD7D24;
+    color: #fff;
+}
+
+.btn-ghost{
+    background: #7B62A3;
+    color: #fff;
+}
+
+.btn-psychic{
+    background: #F366B9;
+    color: #fff;
+}
+
+.btn-steel{
+    background: #9EB7B8;
+}
+
+.btn-dark{
+    background: #707070;
+    color: #fff;
+}
+
+.btn-electric{
+    background: #EED535;
+}
+
+.btn-fighting{
+    background: #D56723;
+    color: #fff;
+}
+
+.btn-grass{
+    background: #9BCC50;
+}
+
+.btn-ice{
+    background: #51C4E7;
+}
+
+.btn-poison{
+    background: #B97FC9;
+    color: #fff;
+}
+
+.btn-rock{
+    background: #A38C21;
+    color: #fff;
+}
+
+.btn-water{
+    background: #4592C4;
+    color: #fff;
+}
+
+button{
+    border: 2px solid #A4A4A4;
+    border-radius: 5px;
+}

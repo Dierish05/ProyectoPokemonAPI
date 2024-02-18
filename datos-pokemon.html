@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="css/estilosInfo.css">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/buttonsStyle.css">
+    <link rel="stylesheet" type="text/css" href="css/Footer.css">
+    <link rel="stylesheet" type="text/css" href="css/nav.css">
+</head>
+<body>
+    <nav class="navbar" id="navbar">
+        <img class="navbar__logo" src="img/pokemon_logo.png">
+
+        <ul>
+            <li class="nav__items">
+                <a href="index.html" class="nav__links">
+                    <span class="fill"></span>
+                    <span class="title PrincipalPage">Principal Page</span>
+                </a>
+            </li>
+
+            <li class="nav__items">
+                <a href="#footer" class="nav__links">
+                    <span class="fill"></span>
+                    <span class="title AboutUs">About Us</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="Pokemon__contentblock">
+            <div class="pokemonPrevious-container">
+                <div class="pokemonPrevious" id="pokemonPrevious"></div>
+            </div>
+
+            <div class="pokemonNext-container">
+                <div class="pokemonNext" id="pokemonNext"></div>
+            </div>
+
+            <div>
+
+            </div>
+        </div>
+
+        <div class="pokedex-pokemon__title" id="pokedex-pokemon__title"></div>
+
+        <section class="pokedex-pokemon__details">
+            <div class="pokemon__info" id="pokemon__info"></div>
+
+            <section class="information container">
+                <div class="pokemon__type" id="pokemon__type"></div>
+                <div class="pokemon__data" id="pokemon__data"></div>
+                <section class="information__abilities-container" id="information__abilities-container"></section>
+                <div class="pokemon__stats" id="pokemon__stats"></div>
+            </section>
+
+            <div></div>
+            <a class="index-button" href="index.html">Explore More Pokémon</a>
+        </section>
+    </main>
+    
+    <footer class="footer" id="footer">
+        <section class="footer-container">
+            <nav class="nav nav--footer">
+                <p class="footer__title">Pokédex Page.</p>
+                
+                <ul class="nav__link nav__link--footer">
+                    <li class="nav__items">
+                        <a href="#" class="nav__links">Inicio</a>
+                    </li>
+                </ul>
+            </nav>
+        </section>
+
+        <section class="footer__copy">
+            <div class="footer__social">
+                <a href="#" class="footer__icons"><img src="./img/facebook.svg" class="footer__img"></a>
+                <a href="#" class="footer__icons"><img src="./img/twitter.svg" class="footer__img"></a>
+                <a href="#" class="footer__icons"><img src="./img/youtube.svg" class="footer__img"></a>
+            </div>
+        </section>
+    </footer>
+
+    <script src="js/PokemonInformation.js"></script>
+    <script src="js/information.js"></script>
+    <script src="js/scroll.js"></script>
+</body>
+</html>

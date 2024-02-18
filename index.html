@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="css/estilos.css">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/buttonsStyle.css"> 
+    <link rel="stylesheet" type="text/css" href="css/Footer.css">
+    <link rel="stylesheet" type="text/css" href="css/nav.css">
+</head>
+<body>
+    <nav class="navbar" id="navbar">
+        <img class="navbar__logo" src="img/pokemon_logo.png">
+
+        <ul>
+            <li class="nav__items">
+                <a href="#" class="nav__links">
+                    <span class="fill"></span>
+                    <span class="title PrincipalPage">Principal Page</span>
+                </a>
+            </li>
+
+            <li class="nav__items">
+                <a href="#footer" class="nav__links">
+                    <span class="fill"></span>
+                    <span class="title AboutUs">About Us</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <section class="pokedex-header">
+        <div class="header-content">
+            <h1>Pokédex</h1>
+        </div>
+    </section>
+
+    <div class="searchbar" id="searchbar">
+                <input data-type="name" type="text" id="searchInput" class="button-white-tt-input" autocomplete="off" spellcheck="false" dir="auto">
+                <img src="img/searchIcon.svg" alt="" class="buttonSearch" id="buttonSearch">
+    </div>
+
+    <section class="pokedex filter">
+        <section class="pokedex-filter-container">
+
+            <article class="pokedex-filter-padding" id="pokedex-filter-padding">
+                <div class="pokedex-filter-results" id="pokedex-filter-results">
+                    <h3 alt="?" class="pokedex-filter-name" style="color: black;">FILTER
+                        <span class="pokedex-filter-arrow">
+                            <img src="./img/arrow.svg" alt="arrow" class="pokedex-filter-img">
+                        </span>
+                    </h3>
+
+                    <div class="pokedex-filter-content">
+                        <div class="type-container" id="type-container">
+                            <h2>Type</h2>
+                            <ul class="pokedex-filter-type" id="pokedex-filter-type">
+                                <li class="nav-item">
+                                    <button class="btn-normal" id="normal">Normal</button>
+                                    <input type="checkbox" data-type=normal class="checkbox-normal" id="checkbox-normal">
+                                </li>
+                                <li class="nav-item">
+                                    <button class="btn-bug" id="bug">Bug</button>
+                                    <input type="checkbox" data-type=bug class="checkbox-bug" id="checkbox-bug">
+                                </li>
+                                <li class="nav-item">
+                                    <button class="btn-dragon" id="dragon">Dragon</button>
+                                    <input type="checkbox" data-type=dragon class="checkbox-dragon" id="checkbox-dragon">
+                                </li>
+                                <li class="nav-item">
+                                    <button class="btn-fairy" id="fairy">Fairy</button>
+                                    <input type="checkbox" data-type=fairy class="checkbox-fairy" id="checkbox-fairy">
+                                </li>
+                                <li class="nav-item">
+                                    <button class="btn-fire" id="fire">Fire</button>
+                                    <input type="checkbox" data-type=fire class="checkbox-fire" id="checkbox-fire">
+                                </li>
+                                <li class="nav-item">
+                                    <button class="btn-ghost" id="ghost">Ghost</button>
+                                    <input type="checkbox" data-type=ghost class="checkbox-ghost" id="checkbox-ghost">
+                                </li>
+                                <li class="nav-item">
+                                    <button class="btn-ground" id="ground">Ground</button>
+                                    <input type="checkbox" data-type=ground class="checkbox-ground" id="checkbox-ground">
+                                </li>
+                                <li class="nav-item">
+                                    <button class="btn-psychic" id="psychic">Psychic</button>
+                                    <input type="checkbox" data-type=psychic class="checkbox-psychic" id="checkbox-psychic">
+                                </li>
+                                <li class="nav-item">
+                                    <button class="btn-steel" id="steel">Steel</button>
+                                    <input type="checkbox" data-type=steel class="checkbox-steel" id="checkbox-steel">
+                                </li>
+                                <li class="nav-item">
+                                    <button class="btn-dark" id="dark">Dark</button>
+                                    <input type="checkbox" data-type=dark class="checkbox-dark" id="checkbox-dark">
+                                </li>
+                                <li class="nav-item">
+                                    <button class="btn-electric" id="electric">Electric</button>
+                                    <input type="checkbox" data-type=electric class="checkbox-electric" id="checkbox-electric">
+                                </li>
+                                <li class="nav-item">
+                                    <button class="btn-fighting" id="fighting">Fighting</button>
+                                    <input type="checkbox" data-type=fighting class="checkbox-fighting" id="checkbox-fighting">
+                                </li>
+                                <li class="nav-item">
+                                    <button class="btn-flying" id="flying">Flying</button>
+                                    <input type="checkbox" data-type=flying class="checkbox-flying" id="checkbox-flying">
+                                </li>
+                                <li class="nav-item">
+                                    <button class="btn-grass" id="grass">Grass</button>
+                                    <input type="checkbox" data-type=grass class="checkbox-grass" id="checkbox-grass">
+                                </li>
+                                <li class="nav-item">
+                                    <button class="btn-ice" id="ice">Ice</button>
+                                    <input type="checkbox" data-type=ice class="checkbox-ice" id="checkbox-ice">
+                                </li>
+                                <li class="nav-item">
+                                    <button class="btn-poison" id="poison">Poison</button>
+                                    <input type="checkbox" data-type=poison class="checkbox-poison" id="checkbox-poison">
+                                </li>
+                                <li class="nav-item">
+                                    <button class="btn-rock" id="rock">Rock</button>
+                                    <input type="checkbox" data-type=rock class="checkbox-rock" id="checkbox-rock">
+                                </li>
+                                <li class="nav-item">
+                                    <button class="btn-water" id="water">Water</button>
+                                    <input type="checkbox" data-type=water class="checkbox-water" id="checkbox-water">
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="region-container" id="region-container">
+                            
+                            <h2>Region</h2>
+                            <ul class="pokedex-filter-region" id="pokedex-filter-region">
+                                <li class="nav-item-region" id="nav-item-region">
+                                    <button class="btn-kanto" id="kanto">Kanto</button>
+                                    <input type="checkbox" data-offset=0 data-limit=151 class="checkbox-kanto" id="checkbox-kanto">
+                                </li>
+                                <li class="nav-item-region" id="nav-item-region">
+                                    <button class="btn-johto" id="johto">Johto</button>
+                                    <input type="checkbox" data-offset=151 data-limit=100 class="checkbox-johto" id="checkbox-johto">
+                                </li>
+                                <li class="nav-item-region" id="nav-item-region">
+                                    <button class="btn-hoenn" id="hoenn">Hoenn</button>
+                                    <input type="checkbox" data-offset=251 data-limit=135 class="checkbox-hoenn" id="checkbox-hoenn">
+                                </li>
+                                <li class="nav-item-region" id="nav-item-region">
+                                    <button class="btn-sinnoh" id="sinnoh">Sinnoh</button>
+                                    <input type="checkbox" data-offset=386 data-limit=108 class="checkbox-sinnoh" id="checkbox-sinnoh">
+                                </li>
+                                <li class="nav-item-region" id="nav-item-region">
+                                    <button class="btn-teselia" id="teselia">Teselia</button>
+                                    <input type="checkbox" data-offset=494 data-limit=155 class="checkbox-teselia" id="checkbox-teselia">
+                                </li>
+                                <li class="nav-item-region" id="nav-item-region">
+                                    <button class="btn-kalos" id="kalos">Kalos</button>
+                                    <input type="checkbox" data-offset=649 data-limit=72 class="checkbox-kalos" id="checkbox-kalos">
+                                </li>
+                                <li class="nav-item-region" id="nav-item-region">
+                                    <button class="btn-alola" id="alola">Alola</button>
+                                    <input type="checkbox" data-offset=721 data-limit=88 class="checkbox-alola" id="checkbox-alola">
+                                </li>
+                                <li class="nav-item-region" id="nav-item-region">
+                                    <button class="btn-galar" id="galar">Galar</button>
+                                    <input type="checkbox" data-offset=809 data-limit=96 class="checkbox-galar" id="checkbox-galar">
+                                </li>
+                                <li class="nav-item-region" id="nav-item-region">
+                                    <button class="btn-paldea" id="paldea">Paldea</button>
+                                    <input type="checkbox" data-offset=905 data-limit=120 class="checkbox-paldea" id="checkbox-paldea">
+                                </li>
+                            </ul>
+                        </div>
+            
+                        <div class="color-container" id="color-container">
+                            <h2>Color</h2>
+                            <ul class="pokedex-filter-color" id="pokedex-filter-color">
+                                <li class="nav-item-color" id="nav-item-color">
+                                    <button class="btn-black" id="black">Black</button>
+                                    <input type="checkbox" data-color=black class="checkbox-black" id="checkbox-black">
+                                </li>
+                                <li class="nav-item-color" id="nav-item-color">
+                                    <button class="btn-blue" id="blue">Blue</button>
+                                    <input type="checkbox" data-color=blue class="checkbox-blue" id="checkbox-blue">
+                                </li>
+                                <li class="nav-item-color" id="nav-item-color">
+                                    <button class="btn-brown" id="brown">Brown</button>
+                                    <input type="checkbox" data-color=brown class="checkbox-brown" id="checkbox-brown">
+                                </li>
+                                <li class="nav-item-color" id="nav-item-color">
+                                    <button class="btn-gray" id="gray">Gray</button>
+                                    <input type="checkbox" data-color=gray class="checkbox-gray" id="checkbox-gray">
+                                </li>
+                                <li class="nav-item-color" id="nav-item-color">
+                                    <button class="btn-green" id="green">Green</button>
+                                    <input type="checkbox" data-color=green class="checkbox-green" id="checkbox-green">
+                                </li>
+                                <li class="nav-item-color" id="nav-item-color">
+                                    <button class="btn-pink" id="pink">Pink</button>
+                                    <input type="checkbox" data-color=pink class="checkbox-pink" id="checkbox-pink">
+                                </li>
+                                <li class="nav-item-color" id="nav-item-color">
+                                    <button class="btn-purple" id="purple">Purple</button>
+                                    <input type="checkbox" data-color=purple class="checkbox-purple" id="checkbox-purple">
+                                </li>
+                                <li class="nav-item-color" id="nav-item-color">
+                                    <button class="btn-red" id="red">Red</button>
+                                    <input type="checkbox" data-color=red class="checkbox-red" id="checkbox-red">
+                                </li>
+                                <li class="nav-item-color" id="nav-item-color">
+                                    <button class="btn-white" id="white">White</button>
+                                    <input type="checkbox" data-color=white class="checkbox-white" id="checkbox-white">
+                                </li>
+                                <li class="nav-item-color" id="nav-item-color">
+                                    <button class="btn-yellow" id="yellow">Yellow</button>
+                                    <input type="checkbox" data-color=yellow class="checkbox-yellow" id="checkbox-yellow">
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div></div>
+                        <div></div>
+                        <div class="div-btn-filter" id="div-btn-filter">
+                            <button class="btn-filter" id="btn-filter">Search</button>
+                        </div>
+                    </div>
+                </div>
+                </article>
+        </section>
+    </section>
+
+    <main>
+        <div class="pokemonList" id="pokemonList"></div>
+
+        <div class="buttons" id="buttons"></div>
+    </main>
+
+    <footer class="footer" id="footer">
+        <section class="footer-container">
+            <nav class="nav nav--footer">
+                <p class="footer__title">Pokédex Page.</p>
+                
+                <ul class="nav__link nav__link--footer">
+                    <li class="nav__items">
+                        <a href="#" class="nav__links">Inicio</a>
+                    </li>
+                </ul>
+            </nav>
+        </section>
+
+        <section class="footer__copy">
+            <div class="footer__social">
+                <a href="#" class="footer__icons"><img src="./img/facebook.svg" class="footer__img"></a>
+                <a href="#" class="footer__icons"><img src="./img/twitter.svg" class="footer__img"></a>
+                <a href="#" class="footer__icons"><img src="./img/youtube.svg" class="footer__img"></a>
+            </div>
+        </section>
+    </footer>
+    
+    <!-- <script src="js/Pokemon.js"></script> -->
+    <script src="js/PokemonChanges.js"></script>
+    <script src="js/PokemonSearch.js"></script>
+    <script src="js/PokedexFilter.js"></script>
+    <script src="js/scroll.js"></script>
+</body>
+</html>
