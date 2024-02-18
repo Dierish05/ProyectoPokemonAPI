@@ -119,6 +119,10 @@ body {
     right: 0;
 }
 
+.information__ability-name, .stats-fonts.stats{
+    text-transform: capitalize;
+}
+
 /* pokemon info */
 
 .pokedex-pokemon__title{

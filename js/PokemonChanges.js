@@ -28,7 +28,7 @@ async function getPokemon(url){
         console.log(results);
         cargarDetallesPokemon(results.results);
 
-        btnNext=results.next ? `<button class="btn">Load more Pokémon</button>` : ''
+        btnNext=results.next ? `<button class="btn">More</button>` : ''
         buttons.innerHTML=btnNext
     }catch(error){
         console.log(error)
@@ -166,9 +166,9 @@ function NoResults(){
   if(pokemonList.innerHTML==''){
     templateHtml=`
     <div class="error-container">
-    <h3>No Pokémon Matched Your Search!</h3>
+    <h3>No Pokémon Matched!</h3>
 
-    <p>Try these suggestions to find a Pokémon:</p>
+    <p>Try these suggestions:</p>
     <ul>
       <li>Reduce the number of search parameters</li>
       <li>Search for only one Pokémon type at a time</li>

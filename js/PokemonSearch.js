@@ -32,7 +32,14 @@ async function searchPokemonByName(name) {
     const data = await response.json();
     const matchingPokemon = filterPokemonByName(data.results, name);
   
-    displayResults(matchingPokemon);
+    if(matchingPokemon.length != 0){
+      displayResults(matchingPokemon);
+    }else{
+      pokemonListArray=[];
+      pokemonListArrayColor = [];
+      pokemonList.innerHTML='';
+      NoResults();
+    }
   } catch (error) {
     console.error('Error al buscar Pokémon:', error);
     displayResults([]);

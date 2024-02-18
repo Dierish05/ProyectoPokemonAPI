@@ -17,6 +17,8 @@ const pokemonStats = document.getElementById('pokemon__stats')
 let clickPrevio;
 let clickProximo;
 
+document.title = idPokemon.to + " | Pokédex";
+
 //obtener los datos de los pokemon
 const getUrl= async(data)=>{
     try{
