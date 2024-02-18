@@ -21,7 +21,7 @@ function clearResults() {
   pokemonList.innerHTML = '';
   pokemonListArray = [];
   currentIndex = 0;
-  getPokemon({url:urlPokemon});
+  getPokemon(urlPokemon);
 }
 
 async function searchPokemonByName(name) {

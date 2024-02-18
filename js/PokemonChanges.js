@@ -166,13 +166,13 @@ function NoResults(){
   if(pokemonList.innerHTML==''){
     templateHtml=`
     <div class="error-container">
-    <h3>No hay ningún Pokémon que coincida con tu búsqueda.</h3>
+    <h3>No Pokémon Matched Your Search!</h3>
 
-    <p>Intenta lo siguiente para encontrar resultados:</p>
+    <p>Try these suggestions to find a Pokémon:</p>
     <ul>
-      <li>Reduce el número de parámetros de búsqueda.</li>
-      <li>Haz búsquedas de tipos de Pokémon de uno en uno.</li>
-      <li>Intenta buscar con un solo color.</li>
+      <li>Reduce the number of search parameters</li>
+      <li>Search for only one Pokémon type at a time</li>
+      <li>Try searching with a single color</li>
     </ul>
     </div>
 
@@ -288,7 +288,7 @@ divBtnFilter.addEventListener('click', async(e)=>{
           }
 
             if(currentOffset.length == 0){
-              getPokemon({url:urlPokemon});
+              getPokemon(urlPokemon);
             }else{
               for(let i=0; i<currentOffset.length;i++){
                 urlRegion = `https://pokeapi.co/api/v2/pokemon?offset=${currentOffset[i]}&limit=${currentLimit[i]}`;
