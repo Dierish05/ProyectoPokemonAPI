@@ -17,7 +17,8 @@ const pokemonStats = document.getElementById('pokemon__stats')
 let clickPrevio;
 let clickProximo;
 
-document.title = idPokemon.to + " | Pokédex";
+//para colocar el titulo con el nombre del pokemon
+document.title = idPokemon + " | Pokédex";
 
 //obtener los datos de los pokemon
 const getUrl= async(data)=>{
@@ -117,12 +118,14 @@ const DataPokemonPreviousNext= async(dataPrevious, dataNext)=>{
 pokemonPrevious.addEventListener('click',(e)=>{
     if(e.target.matches('.pokemonPrevious')){
         window.location.href= `datos-Pokemon.html?idPokemon=${clickPrevio}`;
+        document.title = clickPrevio + " | Pokédex";
     }
 })
 
 pokemonNext.addEventListener('click',(e)=>{
     if(e.target.matches('.pokemonNext')){
         window.location.href= `datos-Pokemon.html?idPokemon=${clickProximo}`;
+        document.title = clickProximo + " | Pokédex";
     }
 })
 
