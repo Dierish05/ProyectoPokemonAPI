@@ -19,6 +19,7 @@ const pokedexFilterType = document.getElementById('pokedex-filter-type');
 const pokedexFilterColor = document.getElementById('pokedex-filter-color');
 const divBtnFilter = document.getElementById('div-btn-filter'); 
 const buttons = document.getElementById('buttons');
+const loaderContainer = document.getElementById('loader__container');
 
 // Función para cargar la lista de Pokémon desde la API
 async function getPokemon(url){
@@ -29,7 +30,8 @@ async function getPokemon(url){
         cargarDetallesPokemon(results.results);
 
         btnNext=results.next ? `<button class="btn">More</button>` : ''
-        buttons.innerHTML=btnNext
+        buttons.innerHTML=btnNext;
+        loaderContainer.innerHTML=`<div class="loader"></div>`;
     }catch(error){
         console.log(error)
     }
@@ -83,6 +85,8 @@ function DataPokemon(){
               return currentColor.every(color => pokemonColors.includes(color));
             }
           });
+
+          loaderContainer.innerHTML='';
       
           // Mostrar los próximos 15 Pokémon después del filtrado
           for (let i = currentIndex; i < currentIndex + 15 && i < filteredPokemon.length; i++) {
